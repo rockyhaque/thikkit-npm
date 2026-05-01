@@ -8,6 +8,11 @@ All notable changes to `thikkit` will be documented in this file. The format fol
 - Postal codes per district / unit (BBPO data)
 - Centroid coordinates (lat/lng) for divisions and districts
 
+## [0.1.1] — 2026-05-01
+
+### Changed
+- Repository URL updated to `rockyhaque/thikkit-npm`. No code or data changes.
+
 ## [0.1.0] — initial release
 
 ### Added
@@ -30,5 +35,6 @@ All notable changes to `thikkit` will be documented in this file. The format fol
 - Direct JSON access via `thikkit/data/*.json`
 - Zero runtime dependencies
 
-[Unreleased]: https://github.com/rockyhaque/thikkit/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/rockyhaque/thikkit/releases/tag/v0.1.0
+[Unreleased]: https://github.com/rockyhaque/thikkit-npm/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/rockyhaque/thikkit-npm/compare/v0.1.0...v0.1.1
+[0.1.0]: https://github.com/rockyhaque/thikkit-npm/releases/tag/v0.1.0

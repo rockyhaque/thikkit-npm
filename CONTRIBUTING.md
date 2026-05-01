@@ -5,7 +5,7 @@ Thanks for considering a contribution! This package exists because Bangladesh's 
 ## Quick start
 
 ```sh
-git clone https://github.com/rockyhaque/thikkit.git
+git clone https://github.com/rockyhaque/thikkit-npm.git
 cd thikkit
 npm install
 npm test            # 27 tests should pass

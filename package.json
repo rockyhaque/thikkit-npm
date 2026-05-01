@@ -1,6 +1,6 @@
 {
   "name": "thikkit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Bilingual (English + Bangla) Bangladesh address dataset with full coverage of administrative divisions, districts, upazilas, and metropolitan thanas. Zero runtime dependencies.",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -65,12 +65,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rockyhaque/thikkit.git"
+    "url": "git+https://github.com/rockyhaque/thikkit-npm.git"
   },
   "bugs": {
-    "url": "https://github.com/rockyhaque/thikkit/issues"
+    "url": "https://github.com/rockyhaque/thikkit-npm/issues"
   },
-  "homepage": "https://github.com/rockyhaque/thikkit#readme",
+  "homepage": "https://github.com/rockyhaque/thikkit-npm#readme",
   "engines": {
     "node": ">=18"
   },
