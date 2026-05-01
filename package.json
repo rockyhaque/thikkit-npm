@@ -1,0 +1,86 @@
+{
+  "name": "thikkit",
+  "version": "0.1.0",
+  "description": "Bilingual (English + Bangla) Bangladesh address dataset with full coverage of administrative divisions, districts, upazilas, and metropolitan thanas. Zero runtime dependencies.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./data/divisions.json": "./data/divisions.json",
+    "./data/districts.json": "./data/districts.json",
+    "./data/units.json": "./data/units.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "data",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint:data": "node -e \"const d=require('./data/units.json'); for (const u of d) if (!u.bn) { console.error('missing bn:', u.id); process.exit(1); } console.log('✓ all units have Bangla')\"",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "bangladesh",
+    "bangla",
+    "thikana",
+    "address",
+    "division",
+    "district",
+    "upazila",
+    "thana",
+    "bd-address",
+    "bangladesh-address",
+    "bilingual",
+    "dmp",
+    "cmp",
+    "kmp",
+    "bd-locations",
+    "bangladesh-geo",
+    "ecommerce",
+    "courier",
+    "shipping"
+  ],
+  "author": {
+    "name": "Rocky Haque",
+    "email": "info.rockyhaque@gmail.com",
+    "url": "https://github.com/rockyhaque"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rockyhaque/thikkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rockyhaque/thikkit/issues"
+  },
+  "homepage": "https://github.com/rockyhaque/thikkit#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.5"
+  }
+}
